@@ -1,0 +1,51 @@
+#!/bin/bash
+
+#napisz skrypt, ktory pobierze 4 liczby jako argumenty i wyznaczy sume, wynik
+*wysle na standardowe wyjscie
+
+echo "$#\n$1\n$2\n$3\n$4\n$@"
+
+#WALIDACJA
+# 1 czy mamy 4 argumenty
+# 2 czy nasze argumenty to liczby
+if [ "$#" -ne 4  ; then
+	echo "usage 10: $0 NUMBER NUMBER NUMBER"
+	exit 10
+
+else 
+
+fi
+A="$1"
+B="$2"
+C="$3"
+D="$4"
+
+
+#WYKONANIE
+
+#echo "Hello World"
+
+
+
+echo -n "POdaj liczbe: "
+read A #wczytywanie danych z klawiatury
+echo "Podales wartosc: $A"
+#Operacje arytemtyczne
+#Operacje na B
+B=$((A+1))
+B=$[A+1]
+let B=A+1
+B='expr $A + 1'
+B=$(expr $A + 1)
+
+
+
+
+
+
+
+
+
+
+
+exit 0
